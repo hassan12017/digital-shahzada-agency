@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Shahzada</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0b1519;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        /* Navbar */
+        header {
+            background-color: #0d1e24;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        nav a {
+            color: #b0bec5;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #25d366;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 50px 20px 30px 20px;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
+        }
+
+        .hero p {
+            color: #cfd8dc;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        /* Profile Image Container */
+        .profile-img-container {
+            width: 280px;
+            height: 380px;
+            margin: 0 auto 40px auto;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .profile-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Services Section */
+        .services-section {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px 40px 20px;
+        }
+
+        .services-title {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 30px;
+            color: #eceff1;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 50px;
+        }
+
+        .service-card {
+            background-color: #ffffff;
+            color: #1a252c;
+            padding: 35px 25px;
+            border-radius: 12px;
+            text-align: left;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-card h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: #0d1e24;
+            font-weight: 700;
+        }
+
+        .service-card p {
+            color: #546e7a;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+
+        /* Call to Action Section */
+        .cta-section {
+            background-color: #f5f7f8;
+            color: #1a252c;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .cta-section h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: #0d1e24;
+        }
+
+        .cta-section p {
+            color: #546e7a;
+            font-size: 16px;
+            margin-bottom: 25px;
+        }
+
+        /* WhatsApp Button */
+        .whatsapp-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #25d366;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 14px 35px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 30px;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .whatsapp-btn:hover {
+            background-color: #20ba59;
+            transform: scale(1.03);
+        }
+
+        .whatsapp-btn i {
+            margin-right: 10px;
+            font-size: 20px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 25px 20px;
+            font-size: 14px;
+            color: #78909c;
+            background-color: #0b1519;
+        }
+
+        @media (max-width: 768px) {
+            header { padding: 20px; }
+            nav a { margin: 0 10px; font-size: 15px; }
+            .hero h1 { font-size: 28px; }
+            .cta-section h2 { font-size: 24px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to Digital Shahzada</h1>
+        <p>Automotive Expert & Software Developer</p>
+        
+        <div class="profile-img-container">
+    <img src="123.jpeg" alt="My Image" style="max-width: 100%; height: auto;">
+        </div>
+    </section>
+
+    <section class="services-section">
+        <h2 class="services-title">Our Services</h2>
+        
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Digital Marketing</h3>
+                <p>High-converting Meta & Instagram ads setup to scale your brand and bring massive sales instantly.</p>
+            </div>
+            
+            <div class="service-card">
+                <h3>AI Voice Agents</h3>
+                <p>Automate your customer support 24/7 with smart AI voice assistants to handle calls seamlessly.</p>
+            </div>
+            
+            <div class="service-card">
+                <h3>Automotive Software</h3>
+                <p>Future-proof and optimize automotive systems software with expert diagnostics and implementation.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <h2>Ready to Skyrocket Your Earnings?</h2>
+        <p>Let's discuss your project on WhatsApp and close your first high-ticket deal today!</p>
+        
+        <a href="https://wa.me/923087204167" target="_blank" class="whatsapp-btn
+        <a href="https://wa.me/923087204167?text=Hello_Digital_Shahzada" class="whatsapp-btn" target="_blank" style="background-color: #25D366; color: white; padding: 12px 24px; border-radius: 25px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; font-weight: bold; font-family: sans-serif;">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397 0 12.008 0c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 12.004-11.953 12.004-.001 0 0 0 0 0-2.002-.001-3.975-.51-5.729-1.479L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.966C16.528 1.975 14.067 1.053 11.5 1.053c-5.438 0-9.864 4.372-9.868 9.802-.001 1.742.469 3.442 1.359 4.927L1.93 20.24l4.717-1.086zM17.51 15.08c-.301-.15-1.781-.879-2.056-.979-.275-.1-.475-.15-.675.15-.2.3-.775.979-.95 1.174-.175.195-.35.215-.65.065-2.701-1.348-4.379-4.144-5.054-5.3-.175-.3-.019-.463.13-.612.134-.133.301-.35.451-.524.15-.174.2-.3.3-.5.1-.2.05-.375-.025-.525-.075-.15-.675-1.625-.925-2.225-.244-.589-.493-.51-.675-.52-.175-.007-.375-.01-.575-.01-.2 0-.525.075-.8 1.025-.275 1.15-1.05 1.15-1.05 1.15s-.075.35-.075.8c0 .45.3 1.35.525 1.65 2.122 2.804 4.89 4.417 7.712 5.058.95.216 1.8.213 2.45.114.72-.11 1.781-.724 2.031-1.39.25-.665.25-1.234.175-1.39-.075-.15-.275-.25-.575-.4z"/></svg>
+    Contact on WhatsApp
+</a>
+        </a>
+    </section>
+
+    <footer>
+        &copy; 2026 Digital Shahzada. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
